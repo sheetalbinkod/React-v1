@@ -1,0 +1,197 @@
+.esri-popup {
+  width: 18rem;
+}
+
+.esri-popup .esri-popup__main-container {
+  max-height: 400px;
+}
+
+.esri-popup--shadow {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* make the point wider */
+.esri-popup--aligned-top-center .esri-popup__pointer-direction,
+.esri-popup--aligned-bottom-center .esri-popup__pointer-direction {
+  transform: scale(1.5, 2) rotate(45deg);
+}
+
+.esri-popup__header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.esri-popup__header-title {
+  padding: 10px;
+  font-family: Montserrat, Georgia, Arial, serif;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  line-height: 1.125;
+  color: rgba(14, 89, 124, 1);
+}
+
+.esri-popup__header-buttons {
+  padding: 0;
+}
+
+.esri-popup__button {
+  padding: 10px;
+  line-height: 1;
+}
+
+/* close icon */
+.esri-popup__header-buttons .esri-popup__icon {
+  flex: 0 0 12px;
+  width: 12px;
+  height: 12px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* zoom icon */
+.esri-popup__footer .esri-popup__icon {
+  flex: 0 0 14px;
+  width: 14px;
+  height: 14px;
+  font-size: 14px;
+}
+
+.esri-popup__footer .esri-popup__action-text {
+  margin: 1px 0 0 5px;
+  font-size: 11px;
+}
+
+[class*='esri-popup--is-docked-top-'] .esri-popup__footer,
+[class*='esri-popup--aligned-bottom-'] .esri-popup__footer {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.esri-popup__pagination-previous {
+  padding-right: 5px;
+}
+
+.esri-popup__pagination-next {
+  padding-left: 5px;
+}
+
+.esri-popup__feature-menu-button {
+  padding: 6px 9px;
+}
+
+.esri-popup__feature-menu-title {
+  padding: 10px;
+  line-height: 1;
+}
+
+.esri-popup__feature-menu-item .esri-icon-check-mark {
+  margin-top: -2px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.esri-popup__content {
+  margin: 0 0 10px 0;
+  padding: 10px;
+}
+
+.carb-popup :last-of-type {
+  margin-bottom: 0;
+}
+
+.carb-popup p {
+  margin-top: 0;
+  margin-bottom: 0.625rem;
+  font-size: 0.8125rem;
+  line-height: 1.25;
+}
+
+.carb-popup hr {
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+  border-top-color: rgba(0, 0, 0, 0.125);
+}
+
+/* link in popup title to site profile */
+.carb-popup-link {
+  display: inline-block;
+  position: relative;
+  margin: 0 0 -0.0625rem 0.125rem;
+  padding: 0;
+  border: 1px solid rgba(14, 89, 124, 1);
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  /* hide text */
+  overflow: hidden;
+  text-indent: 100%;
+}
+
+/* right triangle */
+.carb-popup-link::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-left: 3px solid rgba(14, 89, 124, 0.875);
+  width: 0;
+  height: 0;
+}
+
+/* match react-select focus */
+.carb-popup-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 3px #2684ff;
+}
+
+.carb-popup .carb-popup-timestamp {
+  margin-bottom: 0.5rem;
+  font-family: Montserrat, Georgia, Arial, serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: #666;
+}
+
+.carb-popup-aqi {
+  display: flex;
+  align-items: center;
+}
+
+.carb-popup-aqi-text {
+  flex: 1;
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+
+.carb-popup-aqi-number {
+  font-family: Montserrat, Georgia, Arial, serif;
+  font-weight: 700;
+  font-size: 2.75rem;
+  line-height: 0.875;
+}
+
+.carb-popup-table {
+  table-layout: fixed;
+  margin-bottom: 0.625rem;
+  border: 1px solid rgba(0, 0, 0, 0.375);
+  width: 100%;
+  font-family: Montserrat, Georgia, Arial, serif;
+  line-height: 1.25;
+}
+
+.carb-popup-table th,
+.carb-popup-table td {
+  padding: 3px 4px 2px;
+  border: 1px solid rgba(0, 0, 0, 0.375);
+  text-align: center;
+}
+
+.carb-popup-table th {
+  font-size: 0.625rem;
+  letter-spacing: 0.5px;
+}
+
+.carb-popup-table td {
+  font-weight: 700;
+  font-size: 0.875rem;
+}

@@ -1,0 +1,165 @@
+.k-state-disabled,
+.k-textbox:disabled {
+  opacity: 1;
+}
+
+.k-state-disabled .k-select {
+  display: none;
+}
+
+.k-state-disabled .k-input,
+.k-textbox:disabled,
+.k-textarea:disabled {
+  background-color: #eee;
+}
+
+.k-label {
+  font-weight: normal;
+}
+
+.k-required {
+  margin-left: 0.125rem;
+  color: rgb(218, 79, 30);
+}
+
+.k-dropdown .k-dropdown-wrap {
+  border-color: rgba(33, 37, 41, 0.15);
+  background-color: #fff;
+}
+
+.k-list .k-item.k-state-focused,
+.k-list .k-item.k-state-focused:hover {
+  box-shadow: none;
+}
+
+.k-multiselect.k-state-disabled .k-button {
+  padding-right: 0;
+  border-color: #eee;
+  background-color: #eee;
+  font-size: 0.9375rem;
+  margin-top: 0.1875rem;
+  margin-bottom: 0.125rem;
+}
+
+.k-multiselect.k-state-disabled .k-button span::after {
+  content: ',';
+}
+
+.k-multiselect.k-state-disabled .k-button:last-of-type span::after {
+  content: '';
+}
+
+.k-multiselect.k-state-disabled .k-select {
+  display: none;
+}
+
+.k-multiselect.k-state-disabled .k-multiselect-wrap {
+  background-color: #eee;
+}
+
+.k-multiselect-wrap .k-button {
+  font-size: 0.8125rem;
+}
+
+.k-textarea {
+  resize: vertical;
+}
+
+.k-button.k-primary {
+  border-color: rgb(14, 89, 124);
+  background-color: rgb(30, 138, 191);
+}
+
+.k-button.k-primary:hover,
+.k-button.k-primary:focus {
+  background-color: rgb(0, 160, 230);
+}
+
+.k-dialog-wrapper {
+  z-index: 0;
+}
+
+.k-dialog-wrapper .k-dialog {
+  max-height: calc(100vh - 20rem);
+}
+
+.k-window {
+  border-color: rgba(14, 89, 124, 0.875);
+}
+
+.k-window-titlebar {
+  padding: 0.625rem 0.875rem;
+  border-color: inherit;
+  border-radius: 0;
+  color: #fff;
+  background-color: rgba(14, 89, 124, 0.875);
+}
+
+.k-window-title {
+  font-size: 1.125rem;
+  line-height: 1;
+}
+
+.k-window-content,
+.k-prompt-container {
+  padding: 0.625rem 0.875rem;
+  font-size: 0.9375rem;
+  line-height: 1.375;
+  color: #444;
+}
+
+.k-dialog-buttongroup {
+  border-radius: 0;
+  border-color: rgba(30, 138, 191, 0.25);
+}
+
+.k-dialog-buttongroup .k-button {
+  border-color: rgba(30, 138, 191, 0.125);
+  font-size: 0.9375rem;
+  color: rgba(30, 138, 191, 0.875);
+  background-color: rgba(30, 138, 191, 0.125);
+}
+
+.k-dialog-buttongroup .k-button:hover {
+  color: #fff;
+  background-color: rgba(30, 138, 191, 0.875);
+}
+
+.k-grid {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.k-grid th,
+.k-grid td {
+  padding: 0.5rem 0.625rem;
+  line-height: 1.25;
+}
+
+.k-grid td {
+  border-top: 1px solid #dde2e7;
+  vertical-align: top;
+}
+
+.k-grid tr:first-child td {
+  border-top: 0;
+}
+
+.k-grid-header-wrap {
+  border-right-width: 0;
+}
+
+.k-i-sort-asc-sm,
+.k-i-sort-desc-sm {
+  margin-left: 0.25rem !important;
+  font-size: 1.25rem;
+  color: rgb(14, 89, 124) !important;
+}
+
+.k-i-sort-asc-sm:before {
+  content: '\e004';
+}
+
+.k-i-sort-desc-sm:before {
+  content: '\e006';
+}
